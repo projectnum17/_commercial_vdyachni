@@ -1,0 +1,2359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- social -->
+  <title>Благодійний фонд “Вдячні”</title>
+
+  <meta name="theme-color" content="#fff" />
+  <meta property="og:image" content="./img/social/opengraph.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="./img/social/opengraph.png" />
+  <meta property="og:title" content="Одна допомога - багато врятованих" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" sizes="16x16" href="./img/social/favicon.svg" type="x-icon">
+
+  <!-- fonts -->
+  <!-- <link rel="stylesheet" href="./fonts/eUkHead/eUkHead.css" />
+  <link rel="stylesheet" href="./fonts/eUk/eUk.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- fonts -->
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- style -->
+
+  <!-- js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="./js/index.bundle.js"></script>
+  <!-- js -->
+
+</head>
+
+
+<body>
+
+  <header class="header fixed-header" id="header">
+    <div class="container header-container">
+        <div class="header__left">
+            <a class="logo" href="/">
+                <picture>
+                    <source media="(max-width: 860px)" srcset="./img/icons/mob-logo.svg" alt="">
+                    <img src="./img/icons/logo.svg" alt="Logo">
+                </picture>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#!">Проекти</a></li>
+                    <li><a href="#!">Реквізити</a></li>
+                    <li><a href="#!">Звіти</a></li>
+                    <li><a href="#!">Про нас</a></li>
+                    <li><a href="#!">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__right-lang">
+                <div>
+                    <span class="currentLang">ua</span>
+                    <span class="lang-icon">
+                        <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.5625 0.727051H1.6875V1.28955H2.25V1.85205H2.8125V2.41455H3.375V2.97705H3.9375V3.53955H5.0625V2.97705H5.625V2.41455H6.1875V1.85205H6.75V1.28955H7.3125V0.727051H8.4375V1.28955H9V2.41455H8.4375V2.97705H7.875V3.53955H7.3125V4.10205H6.75V4.66455H6.1875V5.22705H5.625V5.78955H5.0625V6.35205H3.9375V5.78955H3.375V5.22705H2.8125V4.66455H2.25V4.10205H1.6875V3.53955H1.125V2.97705H0.5625V2.41455H0V1.28955H0.5625V0.727051Z"
+                                fill="#101114" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="language-dropdown links">
+                    <span class="langEn">en</span>
+                </div>
+            </div>
+
+            <div class="header__right-btns">
+                <a class="header-btn get-support" href="#!">
+                    <span>
+                        Отримати допомогу
+                    </span>
+                    <span>
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114"
+                                stroke-width="2" />
+                        </svg>
+                    </span>
+                </a>
+                <a class="header-btn give-support" href="#!">
+                    <span>Допомогти</span>
+                </a>
+                <button id="open-menu">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.759411 0.215698L0.373047 0.602062L0.759411 0.988559L0.373047 1.37492L0.759411 1.76129L0.373047 2.14778L0.759411 2.53415L1.14577 2.14778L1.53214 2.53415L1.9185 2.14778L2.30487 2.53415L2.69123 2.14778L3.07759 2.53415L3.46396 2.14778L3.85032 2.53415L4.23668 2.14778L4.62305 2.53415L5.00941 2.14778L5.39577 2.53415L5.78214 2.14778L6.1685 2.53415L6.55487 2.14778L6.94123 2.53415L7.32759 2.14778L7.71396 2.53415L8.10032 2.14778L8.48668 2.53415L8.87305 2.14778L9.25941 2.53415L9.64577 2.14778L10.0321 2.53415L10.4185 2.14778L10.8049 2.53415L11.1912 2.14778L11.5776 2.53415L11.964 2.14778L12.3503 2.53415L12.7367 2.14778L13.123 2.53415L13.5094 2.14778L13.8958 2.53415L14.2821 2.14778L14.6685 2.53415L15.0549 2.14778L15.4412 2.53415L15.8276 2.14778L16.214 2.53415L16.6003 2.14778L16.9867 2.53415L17.373 2.14778L16.9867 1.76129L17.373 1.37492L16.9867 0.988559L17.373 0.602062L16.9867 0.215698L16.6003 0.602062L16.214 0.215698L15.8276 0.602062L15.4412 0.215698L15.0549 0.602062L14.6685 0.215698L14.2821 0.602062L13.8958 0.215698L13.5094 0.602062L13.123 0.215698L12.7367 0.602062L12.3503 0.215698L11.964 0.602062L11.5776 0.215698L11.1912 0.602062L10.8049 0.215698L10.4185 0.602062L10.0321 0.215698L9.64577 0.602062L9.25941 0.215698L8.87305 0.602062L8.48668 0.215698L8.10032 0.602062L7.71396 0.215698L7.32759 0.602062L6.94123 0.215698L6.55487 0.602062L6.1685 0.215698L5.78214 0.602062L5.39577 0.215698L5.00941 0.602062L4.62305 0.215698L4.23668 0.602062L3.85032 0.215698L3.46396 0.602062L3.07759 0.215698L2.69123 0.602062L2.30487 0.215698L1.9185 0.602062L1.53214 0.215698L1.14577 0.602062L0.759411 0.215698Z"
+                            fill="#101114" />
+                        <path
+                            d="M0.759411 5.08411L0.373047 5.47047L0.759411 5.85697L0.373047 6.24333L0.759411 6.62969L0.373047 7.01619L0.759411 7.40256L1.14577 7.01619L1.53214 7.40256L1.9185 7.01619L2.30487 7.40256L2.69123 7.01619L3.07759 7.40256L3.46396 7.01619L3.85032 7.40256L4.23668 7.01619L4.62305 7.40256L5.00941 7.01619L5.39577 7.40256L5.78214 7.01619L6.1685 7.40256L6.55487 7.01619L6.94123 7.40256L7.32759 7.01619L7.71396 7.40256L8.10032 7.01619L8.48668 7.40256L8.87305 7.01619L9.25941 7.40256L9.64577 7.01619L10.0321 7.40256L10.4185 7.01619L10.8049 7.40256L11.1912 7.01619L11.5776 7.40256L11.964 7.01619L12.3503 7.40256L12.7367 7.01619L13.123 7.40256L13.5094 7.01619L13.8958 7.40256L14.2821 7.01619L14.6685 7.40256L15.0549 7.01619L15.4412 7.40256L15.8276 7.01619L16.214 7.40256L16.6003 7.01619L16.9867 7.40256L17.373 7.01619L16.9867 6.62969L17.373 6.24333L16.9867 5.85697L17.373 5.47047L16.9867 5.08411L16.6003 5.47047L16.214 5.08411L15.8276 5.47047L15.4412 5.08411L15.0549 5.47047L14.6685 5.08411L14.2821 5.47047L13.8958 5.08411L13.5094 5.47047L13.123 5.08411L12.7367 5.47047L12.3503 5.08411L11.964 5.47047L11.5776 5.08411L11.1912 5.47047L10.8049 5.08411L10.4185 5.47047L10.0321 5.08411L9.64577 5.47047L9.25941 5.08411L8.87305 5.47047L8.48668 5.08411L8.10032 5.47047L7.71396 5.08411L7.32759 5.47047L6.94123 5.08411L6.55487 5.47047L6.1685 5.08411L5.78214 5.47047L5.39577 5.08411L5.00941 5.47047L4.62305 5.08411L4.23668 5.47047L3.85032 5.08411L3.46396 5.47047L3.07759 5.08411L2.69123 5.47047L2.30487 5.08411L1.9185 5.47047L1.53214 5.08411L1.14577 5.47047L0.759411 5.08411Z"
+                            fill="#101114" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header> 
+
+<div class="mobile-nav" id="mob-menu">
+	<div class="container">
+
+		<div class="mobile-nav__head">
+			<div class="mobile-nav__head-logo">
+				<a href="/">
+					<img src="./img/icons/mob-logo.svg" alt="Logo">
+				</a>
+			</div>
+			<div class="mobile-nav__head-btn">
+				<div class="header__right-lang">
+					<div>
+						<span class="currentLang">ua</span>
+						<span class="lang-icon">
+							<svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.5625 0.727051H1.6875V1.28955H2.25V1.85205H2.8125V2.41455H3.375V2.97705H3.9375V3.53955H5.0625V2.97705H5.625V2.41455H6.1875V1.85205H6.75V1.28955H7.3125V0.727051H8.4375V1.28955H9V2.41455H8.4375V2.97705H7.875V3.53955H7.3125V4.10205H6.75V4.66455H6.1875V5.22705H5.625V5.78955H5.0625V6.35205H3.9375V5.78955H3.375V5.22705H2.8125V4.66455H2.25V4.10205H1.6875V3.53955H1.125V2.97705H0.5625V2.41455H0V1.28955H0.5625V0.727051Z"
+									fill="#101114" />
+							</svg>
+						</span>
+					</div>
+	
+					<div class="language-dropdown links">
+						<span class="langEn">en</span>
+					</div>
+				</div>
+				<a href="#!">
+					Допомогти
+				</a>
+				<button id="close-menu">
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.82305 7.65H9.47305V8.3H10.123V8.95H10.773V9.6H11.423V10.25H12.073V10.9H12.723V11.55H13.373V12.2H12.723V12.85H12.073V13.5H11.423V12.85H10.773V12.2H10.123V11.55H9.47305V10.9H8.82305V10.25H8.17305V9.6H7.52305V8.95H6.22305V9.6H5.57305V10.25H4.92305V10.9H4.27305V11.55H3.62305V12.2H2.97305V12.85H2.32305V13.5H1.67305V12.85H1.02305V12.2H0.373047V11.55H1.02305V10.9H1.67305V10.25H2.32305V9.6H2.97305V8.95H3.62305V8.3H4.27305V7.65H4.92305V6.35H4.27305V5.7H3.62305V5.05H2.97305V4.4H2.32305V3.75H1.67305V3.1H1.02305V2.45H0.373047V1.8H1.02305V1.15H1.67305V0.5H2.32305V1.15H2.97305V1.8H3.62305V2.45H4.27305V3.1H4.92305V3.75H5.57305V4.4H6.22305V5.05H7.52305V4.4H8.17305V3.75H8.82305V3.1H9.47305V2.45H10.123V1.8H10.773V1.15H11.423V0.5H12.073V1.15H12.723V1.8H13.373V2.45H12.723V3.1H12.073V3.75H11.423V4.4H10.773V5.05H10.123V5.7H9.47305V6.35H8.82305V7.65Z"
+							fill="#0D59B5" />
+					</svg>
+
+				</button>
+			</div>
+		</div>
+		<div class="mobile-nav__content">
+			<nav>
+				<ul>
+					<li>
+						<a href="#!">Проекти</a>
+					</li>
+					<li>
+						<a href="#!">Реквізити</a>
+					</li>
+					<li>
+						<a href="#!">Звіти</a>
+					</li>
+					<li>
+						<a href="#!">Про нас</a>
+					</li>
+					<li>
+						<a href="#!">FAQ</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="mobile-nav__content-links">
+				<a class="header-btn get-support" href="#!">
+					<span>
+						Отримати допомогу
+					</span>
+					<span>
+						<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+						</svg>
+					</span>
+				</a>
+				<a class="header-btn give-support" href="#!">
+					<span>Зробити внесок</span>
+					<span>
+						<svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.1 3.38555L9.4 4.08555L10.1 4.78555L9.4 5.48555L10.1 6.18555L9.4 6.88555L10.8 8.28555L11.5 7.58555L12.2 8.28555L12.9 7.58555L13.6 8.28555L14.3 7.58555L15 8.28555L14.3 8.98555L15 9.68555L14.3 10.3855L15 11.0855L14.3 11.7855L13.6 11.0855L12.9 11.7855L12.2 11.0855L11.5 11.7855L10.8 11.0855L9.4 12.4855L10.1 13.1855L9.4 13.8855L10.1 14.5855L9.4 15.2855L10.1 15.9855L9.4 16.6855L8.7 15.9855L8 16.6855L7.3 15.9855L6.6 16.6855L5.9 15.9855L6.6 15.2855L5.9 14.5855L6.6 13.8855L5.9 13.1855L6.6 12.4855L5.2 11.0855L4.5 11.7855L3.8 11.0855L3.1 11.7855L2.4 11.0855L1.7 11.7855L1 11.0855L1.7 10.3855L1 9.68555L1.7 8.98555L1 8.28555L1.7 7.58555L2.4 8.28555L3.1 7.58555L3.8 8.28555L4.5 7.58555L5.2 8.28555L6.6 6.88555L5.9 6.18555L6.6 5.48555L5.9 4.78555L6.6 4.08555L5.9 3.38555L6.6 2.68555L7.3 3.38555L8 2.68555L8.7 3.38555L9.4 2.68555L10.1 3.38555Z"
+								fill="#FDD631" />
+						</svg>
+
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+  <main id="page1Identifier">
+
+    <!-- UPD INTRO -->
+<section class="intro">
+  <div class="container">
+    <div class="intro-inner">
+      <div class="intro-col intro-content" style="background-image: url(./img/main-article/intro-bgUPD.svg);">
+
+        <div class="pixel-ico">
+          <svg width="143" height="18" viewBox="0 0 143 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.179688 0V17.6289L35.7541 17.6289V0H0.179688ZM71.3285 0V17.6289L142.322 17.6289V0H71.3285Z"
+              fill="#1F6FCF" />
+          </svg>
+        </div>
+
+        <h1 class="h1">
+          <span>Одна допомога -</span> багато врятованих
+        </h1>
+
+        <div class="link-container mob-hidden"><svg width="143" height="18" viewBox="0 0 143 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.179688 0V17.6289L35.7541 17.6289V0H0.179688ZM71.3285 0V17.6289L142.322 17.6289V0H71.3285Z"
+              fill="#1F6FCF" />
+          </svg>
+
+          <a href="#!">
+            <span>
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.82266 0.7L9.12266 1.4L9.82266 2.1L9.12266 2.8L9.82266 3.5L9.12266 4.2L10.5227 5.6L11.2227 4.9L11.9227 5.6L12.6227 4.9L13.3227 5.6L14.0227 4.9L14.7227 5.6L14.0227 6.3L14.7227 7L14.0227 7.7L14.7227 8.4L14.0227 9.1L13.3227 8.4L12.6227 9.1L11.9227 8.4L11.2227 9.1L10.5227 8.4L9.12266 9.8L9.82266 10.5L9.12266 11.2L9.82266 11.9L9.12266 12.6L9.82266 13.3L9.12266 14L8.42266 13.3L7.72266 14L7.02266 13.3L6.32266 14L5.62266 13.3L6.32266 12.6L5.62266 11.9L6.32266 11.2L5.62266 10.5L6.32266 9.8L4.92266 8.4L4.22266 9.1L3.52266 8.4L2.82266 9.1L2.12266 8.4L1.42266 9.1L0.722656 8.4L1.42266 7.7L0.722656 7L1.42266 6.3L0.722656 5.6L1.42266 4.9L2.12266 5.6L2.82266 4.9L3.52266 5.6L4.22266 4.9L4.92266 5.6L6.32266 4.2L5.62266 3.5L6.32266 2.8L5.62266 2.1L6.32266 1.4L5.62266 0.7L6.32266 0L7.02266 0.7L7.72266 0L8.42266 0.7L9.12266 0L9.82266 0.7Z"
+                  fill="#101114" />
+              </svg>
+            </span>
+            <span>Зробити внесок</span>
+          </a>
+        </div>
+        <div class="link-container mob-vissible">
+          <a class="support" href="#!">
+            <span>Отримати допомогу</span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 11.4604L11.4985 1.46045M1.5 1.4612H11.4985V11.4597" stroke="#101114" stroke-width="2" />
+              </svg>
+            </span>
+          </a>
+          <a class="pay" href="#!">
+            <span>Зробити внесок</span>
+            <span>
+              <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.3 4.06045L8.7 4.66045L9.3 5.26045L8.7 5.86045L9.3 6.46045L8.7 7.06045L9.9 8.26045L10.5 7.66045L11.1 8.26045L11.7 7.66045L12.3 8.26045L12.9 7.66045L13.5 8.26045L12.9 8.86045L13.5 9.46045L12.9 10.0604L13.5 10.6605L12.9 11.2604L12.3 10.6605L11.7 11.2604L11.1 10.6605L10.5 11.2604L9.9 10.6605L8.7 11.8604L9.3 12.4604L8.7 13.0604L9.3 13.6605L8.7 14.2604L9.3 14.8605L8.7 15.4604L8.1 14.8605L7.5 15.4604L6.9 14.8605L6.3 15.4604L5.7 14.8605L6.3 14.2604L5.7 13.6605L6.3 13.0604L5.7 12.4604L6.3 11.8604L5.1 10.6605L4.5 11.2604L3.9 10.6605L3.3 11.2604L2.7 10.6605L2.1 11.2604L1.5 10.6605L2.1 10.0604L1.5 9.46045L2.1 8.86045L1.5 8.26045L2.1 7.66045L2.7 8.26045L3.3 7.66045L3.9 8.26045L4.5 7.66045L5.1 8.26045L6.3 7.06045L5.7 6.46045L6.3 5.86045L5.7 5.26045L6.3 4.66045L5.7 4.06045L6.3 3.46045L6.9 4.06045L7.5 3.46045L8.1 4.06045L8.7 3.46045L9.3 4.06045Z"
+                  fill="#FFE600" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="intro-col intro-slider">
+        <div class="intro-slider__items swiper">
+          <div class="intro-slider__wrapper swiper-wrapper">
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 1">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 2">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 3">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 4">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 3">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="intro-slider__slide swiper-slide">
+              <img src="./img/main-article/inro-slideUPD.jpg" alt="Slide 4">
+              <div class="intro-slider__slide-descr">
+                <p>Ланка евакуації:</p>
+                <h3>Стабпукнт</h3>
+                <a href="#!">
+                  <span>Приєднатись до збору</span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L10.9985 1M1 1.00075H10.9985V10.9993" stroke="white" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-inner">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- UPD INTRO -->
+
+
+<section class="about">
+  <div class="container-right">
+    <div class="about__title">
+      <h2>Про фонд</h2>
+      <a class="grey-link-btn about-link" href="#!">
+        <span>
+          Переглянути звіти
+        </span>
+        <span>
+          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="about__content">
+      <div class="about__content-descr">
+        <p>
+          Фокус Фонду «Вдячні» – допомога невеликими кількостями амуніції, тактичної медицини, рятувального
+          інвентаря (наявного в нас на момент вашого звернення). Метою БФ «Вдячні» є розвантаження фондів,
+          масштаби поставок, яких є масовими, та не адресними
+        </p>
+
+        <a href="#!" class="black-link-btn more-link">
+          <span>
+            Більше про нас
+          </span>
+          <span>
+            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="about__content-gallery">
+        <div class="slider__about swiper">
+          <div class="slider__about-wrapper swiper-wrapper">
+            <div class="slider__about-slide swiper-slide">
+              <div class="about-slide-img">
+                <img src="./img/main-article/about-slide-1.jpg" alt="Slide">
+              </div>
+            </div>
+            <div class="slider__about-slide swiper-slide">
+              <div class="about-slide-img">
+                <img src="./img/main-article/about-slide-1.jpg" alt="Slide">
+              </div>
+            </div>
+            <div class="slider__about-slide swiper-slide">
+              <div class="about-slide-img">
+                <img src="./img/main-article/about-slide-1.jpg" alt="Slide">
+              </div>
+            </div>
+
+            <div class="slider__about-slide swiper-slide">
+              <div class="about-slide-img">
+                <img src="./img/main-article/about-slide-1.jpg" alt="Slide">
+              </div>
+            </div>
+
+            <div class="slider__about-slide swiper-slide">
+              <div class="about-slide-img">
+                <img src="./img/main-article/about-slide-1.jpg" alt="Slide">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-mob-links">
+        <a href="#!" class="black-link-btn more-link hidden">
+          <span>
+            Більше про нас
+          </span>
+          <span>
+            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+            </svg>
+          </span>
+        </a>
+        <a class="grey-link-btn about-link hidden" href="#!">
+          <span>
+            Переглянути звіти
+          </span>
+          <span>
+            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project">
+  <div class="container">
+    <div class="project__title">
+      <h2>Проєкти</h2>
+      <div class="project__title-bread">
+        <div class="project__title-bread__item active">
+          <span class="actual-icon">
+            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.082 -0.00622559H4.06947V1.14083H2.92118V3.47186H1.80454V5.72109H0.660015V7.97033H0.65625V9.11738H4.10294V11.3666H2.95841V13.6158H1.81639V15.9938H4.11033V14.8467L5.24746 14.8467V13.7086H6.26787V12.5608H7.43903V11.413H8.60908V10.2652H9.77466V9.11738H10.9349V7.98552H12.082V4.58423H9.78094V3.43643H10.9485V2.28863H12.1127V1.14083H12.082V-0.00622559ZM4.10893 14.8467V13.6158H5.09727V12.5608H6.2648V11.413H7.43234V10.2652H8.59987V9.11738H9.76741V7.96957H10.9349V5.73129H7.50025V4.58423H8.6134V3.43643H9.78094V2.28863H10.9451V1.14083H4.06947V3.47186H2.94907V5.72109H1.80886V7.97033H6.37316V9.11738H5.24746V11.3666H4.10294V13.6158H2.96092V14.8467H4.10893Z"
+                fill="#101114" />
+            </svg>
+          </span>
+          <span class="category-title">
+            Актуальні
+          </span>
+        </div>
+        <div class="project__title-bread__item">
+          <span class="done-project">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.29386 8.73211H6.11204V7.91393H6.93022V8.73211H7.7484V9.55029H9.38477V8.73211H10.2029V7.91393H11.0211V7.09575H11.8393V6.27757H12.6575V7.09575H13.4757V8.73211H12.6575V9.55029H11.8393V10.3685H11.0211V11.1867H10.2029V12.0048H9.38477V12.823H7.7484V12.0048H6.93022V11.1867H6.11204V10.3685H5.29386V8.73211Z"
+                fill="#101114" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.5666 8.09575V8.91393H17.3848V10.1867H16.5666V11.0048H15.7484V14.2776H14.9302V15.0957H14.112V15.9139H10.8393V16.7321H10.0211V17.5503H8.7484V16.7321H7.93022V15.9139H4.65749V15.0957H3.83931V14.2776H3.02113V11.0048H2.20295V10.1867H1.38477V8.91393H2.20295V8.09575H3.02113V4.82302H3.83931V4.00484H4.65749V3.18666H7.93022V2.36847H8.7484V1.55029H10.0211V2.36847H10.8393V3.18666H14.112V4.00484H14.9302V4.82302H15.7484V8.09575H16.5666ZM15.112 2.18666V3.00484H15.9302V3.82302H16.7484V7.09575H17.5666V7.91393H18.3848V11.1867H17.5666V12.0048H16.7484V15.2776H15.9302V16.0957H15.112V16.9139H11.8393V17.7321H11.0211V18.5503H7.7484V17.7321H6.93022V16.9139H3.65749V16.0957H2.83931V15.2776H2.02113V12.0048H1.20295V11.1867H0.384766V7.91393H1.20295V7.09575H2.02113V3.82302H2.83931V3.00484H3.65749V2.18666H6.93022V1.36847H7.7484V0.550293H11.0211V1.36847H11.8393V2.18666H15.112Z"
+                fill="#101114" />
+            </svg>
+          </span>
+          <span class="category-title">
+            Завершені
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project__content">
+      <div class="project__content-item-wrap active">
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="date-banner">
+                <span>до 30.11.2023</span>
+              </div>
+
+              <div class="message-banner">
+                <span>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.2702 5.28041V6.05313H17.043V12.235H16.2702V13.0077H15.4975V13.7804H14.7248V14.5531H13.9521V15.3259H13.1793V16.0986H12.4066V16.8713H11.6339V17.644H5.45206V16.8713H4.67933V16.0986H3.90661V15.3259H3.13388V14.5531H2.36115V13.7804H1.58842V13.0077H0.815696V12.235H0.0429688V6.05313H0.815696V5.28041H1.58842V4.50768H2.36115V3.73495H3.13388V2.96222H3.90661V2.1895H4.67933V1.41677H5.45206V0.644043H11.6339V1.41677H12.4066V2.1895H13.1793V2.96222H13.9521V3.73495H14.7248V4.50768H15.4975V5.28041H16.2702ZM10.0914 7.59557V5.27286H6.9945V7.59557H7.76873V9.91828H9.31721V7.59557H10.0914ZM9.31721 11.4668H7.76873V13.0152H9.31721V11.4668Z"
+                      fill="#1F6FCF" />
+                  </svg>
+
+                </span>
+                <span>2 дні до кінця збору</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo1 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+            </div>
+
+            <div class="project__content-item__content-btns">
+              <a href="#!">Зробити внесок</a>
+              <a href="#!">
+                <span>
+                  Детальніше
+                </span>
+                <span>
+                  <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="date-banner">
+                <span>до 30.11.2023</span>
+              </div>
+
+              <div class="message-banner">
+                <span>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.2702 5.28041V6.05313H17.043V12.235H16.2702V13.0077H15.4975V13.7804H14.7248V14.5531H13.9521V15.3259H13.1793V16.0986H12.4066V16.8713H11.6339V17.644H5.45206V16.8713H4.67933V16.0986H3.90661V15.3259H3.13388V14.5531H2.36115V13.7804H1.58842V13.0077H0.815696V12.235H0.0429688V6.05313H0.815696V5.28041H1.58842V4.50768H2.36115V3.73495H3.13388V2.96222H3.90661V2.1895H4.67933V1.41677H5.45206V0.644043H11.6339V1.41677H12.4066V2.1895H13.1793V2.96222H13.9521V3.73495H14.7248V4.50768H15.4975V5.28041H16.2702ZM10.0914 7.59557V5.27286H6.9945V7.59557H7.76873V9.91828H9.31721V7.59557H10.0914ZM9.31721 11.4668H7.76873V13.0152H9.31721V11.4668Z"
+                      fill="#1F6FCF" />
+                  </svg>
+
+                </span>
+                <span>2 дні до кінця збору</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo1 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+            </div>
+
+            <div class="project__content-item__content-btns">
+              <a href="#!">Зробити внесок</a>
+              <a href="#!">
+                <span>
+                  Детальніше
+                </span>
+                <span>
+                  <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="date-banner">
+                <span>до 30.11.2023</span>
+              </div>
+
+              <div class="message-banner">
+                <span>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.2702 5.28041V6.05313H17.043V12.235H16.2702V13.0077H15.4975V13.7804H14.7248V14.5531H13.9521V15.3259H13.1793V16.0986H12.4066V16.8713H11.6339V17.644H5.45206V16.8713H4.67933V16.0986H3.90661V15.3259H3.13388V14.5531H2.36115V13.7804H1.58842V13.0077H0.815696V12.235H0.0429688V6.05313H0.815696V5.28041H1.58842V4.50768H2.36115V3.73495H3.13388V2.96222H3.90661V2.1895H4.67933V1.41677H5.45206V0.644043H11.6339V1.41677H12.4066V2.1895H13.1793V2.96222H13.9521V3.73495H14.7248V4.50768H15.4975V5.28041H16.2702ZM10.0914 7.59557V5.27286H6.9945V7.59557H7.76873V9.91828H9.31721V7.59557H10.0914ZM9.31721 11.4668H7.76873V13.0152H9.31721V11.4668Z"
+                      fill="#1F6FCF" />
+                  </svg>
+
+                </span>
+                <span>2 дні до кінця збору</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo1 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+            </div>
+
+            <div class="project__content-item__content-btns">
+              <a href="#!">Зробити внесок</a>
+              <a href="#!">
+                <span>
+                  Детальніше
+                </span>
+                <span>
+                  <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#101114" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project__content-item-wrap complete-goal">
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="done-banner">
+                <span>Завершено</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo4 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+              <div class="project__content-item__content-btns">
+                <a href="#!" class="complete-goal-link">
+                  <span>
+                    Детальніше
+                  </span>
+                  <span>
+                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="done-banner">
+                <span>Завершено</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo4 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+              <div class="project__content-item__content-btns">
+                <a href="#!" class="complete-goal-link">
+                  <span>
+                    Детальніше
+                  </span>
+                  <span>
+                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__content-item">
+          <div class="pixel-bg">
+            <img src="./img/icons/pixel-bg.svg" alt="BG">
+          </div>
+          <div class="project__content-item__gallery">
+            <div class="gallery-banner">
+              <div class="done-banner">
+                <span>Завершено</span>
+              </div>
+            </div>
+
+            <div class="gallery-banner__photo4 gallery-banner__photo swiper">
+              <div class="gallery-banner__photo-wrapper swiper-wrapper">
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+                <div class="gallery-banner__photo-slide swiper-slide">
+                  <img src="./img/main-article/project-slide-1.jpg"
+                    alt="Геманалізатор для військового мобільного шпиталю">
+                </div>
+              </div>
+
+              <div class="swiper-pagination project-gallery-pagination"></div>
+
+              <div class="swiper-button-prev project-gallery-btn-prev">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.6582" cy="14.7017" r="14.459" transform="rotate(-180 14.6582 14.7017)" fill="white" />
+                  <path d="M17.0117 19.4067L12.3068 14.7018L17.0117 9.99683" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+              <div class="swiper-button-next project-gallery-btn-next">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.5762" cy="14.7017" r="14.459" fill="white" />
+                  <path d="M12.2266 9.99658L16.9315 14.7015L12.2266 19.4065" stroke="#101114" stroke-opacity="0.6"
+                    stroke-width="1.4" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="project__content-item__content">
+            <h3>
+              Геманалізатор для військового мобільного шпиталю
+            </h3>
+            <div class="content-item__content-description">
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+              <p>
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+                Війсковий мобільний шпиталь терміново потребує гематологічний аналізатор, який допомагає суттєво
+                полегшити, прискорити та оптимізувати аналіз крові
+              </p>
+            </div>
+            <div class="project__content-item__content-sum">
+              <div class="icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0599 0.000488281H4.36277V1.32431H1.55112V3.97195H4.36277V2.64813H11.0599V3.97195H12.4657V8.07127H0.0703125V9.50939H5.58651V10.9475H2.95694V12.3856H0.0703125V13.8238L1.55112 13.8238V19.207H2.95694V20.6452H5.76859V22.0005H12.4657V20.6452H15.2773V17.7605H12.4657V19.3529H5.76859V17.7605H4.36277V13.8238L16.7697 13.8238V12.3856H9.81469V10.9475H12.4657V9.50939H16.7697V8.07127H15.2773V2.64813H13.8715V1.32431H11.0599V0.000488281Z"
+                    fill="black" />
+                </svg>
+
+              </div>
+              <div class="goal">
+                <p>Ціль: <span>475,000 грн</span></p>
+              </div>
+              <div class="project__content-item__content-btns">
+                <a href="#!" class="complete-goal-link">
+                  <span>
+                    Детальніше
+                  </span>
+                  <span>
+                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__content-link">
+        <a href="#!" class="grey-link-btn project-link">
+          <span>Перегялнути всі проєкти</span>
+          <span>
+            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#000" stroke-width="2" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="buggy container">
+  <div class="buggy__content">
+
+    <div class="buggy__content-pixel-t">
+      <svg width="244" height="49" viewBox="0 0 244 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M243.113 0.70166L216.095 0.701663L216.095 48.2369H243.113L243.113 0.70166ZM27.0417 48.2369H0.0234393L0.0234375 27.5353L27.0417 27.5353L27.0417 48.2369ZM161.683 48.2369H107.647L107.647 27.7069L134.666 27.7069L134.665 0.70167L161.683 0.701667L161.683 48.2369ZM188.714 48.2369H161.696V27.7208L188.714 27.7208V48.2369ZM189.065 27.7208L216.083 27.7208V0.701663L189.065 0.701665V27.7208ZM80.6916 27.7208L53.6733 27.7208V0.701677L80.6916 0.701674V27.7208Z"
+          fill="#EFF1F2" />
+      </svg>
+    </div>
+    <div class="buggy__content-pixel-b">
+      <svg width="213" height="44" viewBox="0 0 213 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24.0217 0.236816L24.0217 20.0686L47.5263 20.0686L47.5263 43.5747L71.0861 43.5747L71.0861 20.0142L47.5815 20.0142V0.236816H24.0217ZM188.58 43.5883L212.14 43.5883V20.0278L188.58 20.0278V43.5883ZM0.384766 43.7077L23.9446 43.7077L23.9446 20.1472L0.384768 20.1472L0.384766 43.7077ZM165.358 43.5037L141.798 43.5037V19.9431L165.358 19.9431V43.5037Z"
+          fill="#EFF1F2" />
+      </svg>
+    </div>
+    <div class="buggy__content-descr">
+      <h3>Кермо порятунку</h3>
+      <p>– дружній збір українських художників та БФ “Вдячні”.
+        Проект по забезпеченню медичних частин евакуаційними багі.</p>
+      <a href="#!" class="black-link-btn more-link">
+        <span>
+          Дізнатись більше
+        </span>
+        <span>
+          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+          </svg>
+        </span>
+      </a>
+    </div>
+    <div class="buggy__content-photo">
+      <img src="./img/main-article/buggy-upd.png" alt="Car">
+
+      <img src="./img/icons/buggy-pixel01.svg" alt="">
+      <img src="./img/icons/buggy-pixel02.svg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="donats">
+  <div class="container">
+    <div class="donats__title">
+      <img src="./img/icons/heart-icon.svg" alt="Heart">
+      <h3>
+        Ми конвертуємо кожен <br>
+        донат у технологічну перевагу України
+      </h3>
+    </div>
+
+    <div class="donats__cards">
+      <div class="donats__cards-item">
+        <div class="donats__cards-item__bg">
+          <img src="./img/icons/donats-card-bg.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__icon">
+          <img src="./img/icons/donats-card-1.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__decsr">
+          <p>Лікарень, яким надано обладнання</p>
+        </div>
+        <div class="donats__cards-item__sum">
+          <span>10+</span>
+        </div>
+      </div>
+
+      <div class="donats__cards-item">
+        <div class="donats__cards-item__bg">
+          <img src="./img/icons/donats-card-bg.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__icon">
+          <img src="./img/icons/donats-card-2.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__decsr">
+          <p>Польових групових <br> аптечок</p>
+        </div>
+        <div class="donats__cards-item__sum">
+          <span>250+</span>
+        </div>
+      </div>
+
+      <div class="donats__cards-item">
+        <div class="donats__cards-item__bg">
+          <img src="./img/icons/donats-card-bg.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__icon">
+          <img src="./img/icons/donats-card-3.svg" alt="alt">
+        </div>
+        <div class="donats__cards-item__decsr">
+          <p>Медичних <br> препаратів</p>
+        </div>
+        <div class="donats__cards-item__sum">
+          <span>20,000+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="photoreports">
+  <div class="container ">
+    <div class="photoreports__title">
+      <h3>Останні фотозвіти</h3>
+    </div>
+
+    <div class="photoreports__content">
+      <div class="photoreports__content-share">
+        <p>Щоб бачити їх першими підпишіться на наш</p>
+        <a target="_blank" href="https://www.instagram.com/" class="insta-share">
+          <span>
+            <img src="./img/icons/insta-icon-blue.svg" alt="Instagram">
+          </span>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="photoreports__content-slider swiper-container ">
+        <div class="photoreports__content-wrapper swiper-wrapper">
+          <div class="photoreports__content-slide swiper-slide">
+            <div class="photoreports__content-slide__img">
+              <img src="./img/main-article/photoreport-slide-1.jpg" alt="5 евакуаційних багі вже на похиціях">
+            </div>
+            <div class="photoreports__content-slide__descr">
+              <div class="photoreports__content-slide__descr-location">
+                <p>5 евакуаційних багі вже <br> на похиціях</p>
+                <div class="photoreports-map">
+                  <span><img src="./img/icons/map-point.svg" alt="Point"></span>
+                  <span>Донеччина</span>
+                </div>
+              </div>
+              <div class="photoreports__content-slide__descr-date">
+                <span>16/11/2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="photoreports__content-slide swiper-slide">
+            <div class="photoreports__content-slide__img">
+              <img src="./img/main-article/photoreport-slide-2.jpg"
+                alt="Важливий вантаж для міської лікарні швидкої медичної допомоги">
+            </div>
+            <div class="photoreports__content-slide__descr">
+              <div class="photoreports__content-slide__descr-location">
+                <p>Важливий вантаж для міської лікарні <br> швидкої медичної допомоги</p>
+                <div class="photoreports-map">
+                  <span><img src="./img/icons/map-point.svg" alt="Point"></span>
+                  <span>м. Кам'янське</span>
+                </div>
+              </div>
+              <div class="photoreports__content-slide__descr-date">
+                <span>16/11/2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="photoreports__content-slide swiper-slide">
+            <div class="photoreports__content-slide__img">
+              <img src="./img/main-article/photoreport-slide-3.jpg"
+                alt="Важливий вантаж для міської лікарні швидкої медичної допомоги">
+            </div>
+            <div class="photoreports__content-slide__descr">
+              <div class="photoreports__content-slide__descr-location">
+                <p>Важливий вантаж для міської лікарні <br> швидкої медичної допомоги</p>
+                <div class="photoreports-map">
+                  <span><img src="./img/icons/map-point.svg" alt="Point"></span>
+                  <span>м. Кам'янське</span>
+                </div>
+              </div>
+              <div class="photoreports__content-slide__descr-date">
+                <span>16/11/2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="photoreports__content-slide slide-more swiper-slide">
+            <div class="slide-more-bg">
+              <img src="./img/icons/photoreports-pixel.svg" alt="BG">
+            </div>
+            <div class="photoreports__content-slide__descr">
+              <div class="photoreports__content-slide__descr-ico">
+                <img src="./img/icons/camera-icon.svg" alt="Camera">
+              </div>
+              <div class="photoreports__content-slide__descr-text">
+                <p>Бажаєте переглянути всі фотозвіти?</p>
+              </div>
+              <div class="photoreports__content-slide__descr-link">
+                <a id="openSliderPopUp" href="#!">
+                  <span>Переглянути</span>
+                  <span>
+                    <svg viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photoreports__content-navigation">
+        <div class="photoreports__content-navigation__btns">
+          <div class="swiper-button-next photoreports__content-navigation-prev">
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="55.7891" y="55.9785" width="55" height="55" rx="27.5" transform="rotate(-180 55.7891 55.9785)"
+                stroke="#101114" />
+              <path d="M36.7754 28.4778L19.8061 28.479M19.8061 28.479L28.2907 36.9624M19.8061 28.479L28.2907 19.9944"
+                stroke="#101114" stroke-width="1.7" />
+            </svg>
+          </div>
+          <div class="swiper-button-next photoreports__content-navigation-next">
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.789062" y="0.978516" width="55" height="55" rx="27.5" stroke="#101114" />
+              <path d="M19.8027 28.4793L36.772 28.478M36.772 28.478L28.2874 19.9946M36.772 28.478L28.2874 36.9626"
+                stroke="#101114" stroke-width="1.7" />
+            </svg>
+          </div>
+        </div>
+        <div class="photoreports__content-navigation__link">
+          <a href="#!" class="black-link-btn photoreports-link">
+            <span>
+              Переглянути всю звітність
+            </span>
+            <span>
+              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="support">
+  <div class="container">
+    <div class="support-content">
+      <div class="support-content-pixel-t">
+        <svg width="218" height="48" viewBox="0 0 218 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.898445 0.478516H24.9323V47.5615H0.898438L0.898445 0.478516ZM217.137 47.5615V24.3481H193.103V47.5615H217.137ZM121.401 47.5615V24.5005H97.367L97.3677 0.478516H73.3339L73.3339 47.5615H121.401ZM73.3223 47.5615V24.5132H49.2885V47.5615H73.3223ZM48.9769 24.5132H24.9431V0.478516H48.9769L48.9769 24.5132ZM145.379 24.5132H169.413V0.478516H145.379V24.5132Z"
+            fill="#EFF1F2" />
+        </svg>
+      </div>
+      <div class="support-content-pixel-b">
+        <svg width="244" height="50" viewBox="0 0 244 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M27.4934 0.73291V22.8857H54.4484V49.8423L81.4667 49.8428V22.8232H54.5117V0.73291H27.4934ZM216.209 49.8579H243.227V22.8389H216.209V49.8579ZM0.386719 49.9951H27.405V22.9761H0.386719V49.9951ZM189.577 49.7612H162.559V22.7417H189.577V49.7612Z"
+            fill="#EFF1F2" />
+        </svg>
+      </div>
+
+      <div class="support-heading">
+        <h2>Допомогти</h2>
+      </div>
+      <div class="support-body">
+        <div class="pay-card">
+          <div class="tabs">
+            <div class="tabs-nav-wrapp">
+              <ul class="tabs-nav">
+                <li class="active"><a href="#tab1" class="text-heading">Разовий внесок</a></li>
+                <li><a href="#tab2" class="text-heading">Підписка</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="donate-form">
+            <div class="field-wrapp">
+              <input type="number">
+
+              <div class="select-custom">
+                <select name="currency" id="select-currency">
+                  <option value="uah">UAH</option>
+                  <option value="usd">USD</option>
+                  <option value="eur">EUR</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="buttons-set">
+              <button class="btn" data-value="200">
+                + 200 <span class="text-light">UAH</span>
+              </button>
+
+              <button class="btn" data-value="500">
+                + 500 <span class="text-light">UAH</span>
+              </button>
+
+              <button class="btn" data-value="1000">
+                + 1000 <span class="text-light">UAH</span>
+              </button>
+            </div>
+
+            <button class="btn-primary btn-submit">
+              Підтримати
+            </button>
+          </div>
+        </div>
+        <div class="payment-details">
+          <div class="details-switcher">
+            <div class="switcher">
+              <input class="sr-only" type="checkbox" id="switch-location" />
+              <label for="switch-location"></label>
+              <span class="text-heading">Я знаходжусь за кордоном</span>
+            </div>
+          </div>
+
+          <div class="details-card">
+            <h3>Реквізити</h3>
+
+            <div id="ua-details" class="tabs">
+              <div class="tabs-nav-wrapp">
+                <ul class="tabs-nav">
+                  <li class="active"><a href="#tab-bank" class="text-heading">Банківський переказ по
+                      Україні</a></li>
+                  <li><a href="#tab-paypal" class="text-heading">Paypal</a></li>
+                  <li><a href="#tab-crypto" class="text-heading">Crypto</a></li>
+                </ul>
+              </div>
+
+
+              <div class="tabs-content">
+                <div id="tab-bank" class="tab">
+                  <div class="content-block">
+
+                    <p><span>БО БЛАГОДІЙНИЙ ФОНД ВДЯЧНІ </span></p>
+                    <p>ЄДРПОУ: <span>44806252</span></p>
+                    <p>Призначення платежу: <span>Благодійний безповоротний внесок</span></p>
+                  </div>
+                  <div class="copy-box">
+                    <span>UA 35 305299 00000 26009021026346</span>
+
+                    <button class="btn-copy" data-value="UA353052990000026009021026346">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div id="tab-paypal" class="tab">
+                  <div class="content-block">
+                    <p>Призначення платежу <b>Charitable donation</b></p>
+                  </div>
+                  <div class="copy-box">
+                    <span><b>gratefulcomua@gmail.com</b></span>
+
+                    <button class="btn-copy" data-value="gratefulcomua@gmail.com">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div id="tab-crypto" class="tab">
+                  <div class="copy-box">
+                    <div>
+                      <div class="label">BTC</div>
+                      <div><b>bc1qhzfknn0xyv3zvhqncjfj0j9vpj9lueyl8t2jzf</b></div>
+                    </div>
+
+                    <button class="btn-copy" data-value="bc1qhzfknn0xyv3zvhqncjfj0j9vpj9lueyl8t2jzf">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+                  <div class="copy-box">
+                    <div>
+                      <div class="label">ETH</div>
+                      <div><b>0x7C751C721fBF542E27bc52ed3ea4d793d7E12E7c</b></div>
+                    </div>
+
+                    <button class="btn-copy" data-value="0x7C751C721fBF542E27bc52ed3ea4d793d7E12E7c">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+                  <div class="copy-box">
+                    <div>
+                      <div class="label">USDT TRC20</div>
+                      <div><b>TVGS9aEPMi82QBJE9Pmbf1AaP4kSHR77Wt</b></div>
+                    </div>
+
+                    <button class="btn-copy" data-value="TVGS9aEPMi82QBJE9Pmbf1AaP4kSHR77Wt">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="int-details" class="tabs" style="display: none;">
+              <ul class="tabs-nav swift">
+                <div class="tabs-nav-wrapp swift">
+                  <li class="active"><a href="#tab-swift" class="text-heading">SWIFT</a></li>
+                </div>
+              </ul>
+
+              <div class="tabs-content">
+                <div id="tab-swift" class="tab">
+                  <div class="content-block">
+                    <p>Beneficiary: <b>БО БЛАГОДІЙНИЙ ФОНД ВДЯЧНІ</b></p>
+                    <p>Company address: <b>79016, УКРАЇНА, ОБЛ. ЛЬВІВСЬКА, М. ЛЬВІВ, ВУЛ. МАРКА
+                        ВОВЧКА, Б. 24</b></p>
+                    <p>Bank SWIFT Code: <b>PBANUA2X</b></p>
+                    <p>Payment purpose: <b>Charitable donation for drones</b></p>
+                  </div>
+                  <div class="copy-box">
+                    <div>
+                      <div class="label">US dollars (USD)</div>
+                      <div><b>UA933052990000026006041026125</b></div>
+                    </div>
+
+                    <button class="btn-copy" data-value="UA933052990000026006041026125">
+                      <span>Скопіювати</span>
+                    </button>
+                  </div>
+
+                  <h4>Correspondent banks</h4>
+
+                  <div class="content-block">
+                    <p>Account in the correspondent bank: <b>001-1-000080</b></p>
+                    <p>SWIFT Code of the correspondent bank: <b>CHASUS33</b></p>
+                    <p>Correspondent bank: <b>JP Morgan Chase Bank, New York, USA</b></p>
+                  </div>
+
+                  <div class="content-block">
+                    <p>Account in the correspondent bank: <b>890-0085-754</b></p>
+                    <p>SWIFT Code of the correspondent bank: <b>IRVT US 3N</b></p>
+                    <p>Correspondent bank: <b>The Bank of New York Mellon, New York, USA</b></p>
+                  </div>
+
+                  <div class="content-block">
+                    <p>Account in the correspondent bank: <b>36445343</b></p>
+                    <p>SWIFT Code of the correspondent bank: <b>CITI US 33</b></p>
+                    <p>Correspondent bank: <b>Citibank N.A., NEW YORK, USA</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="map-bg">
+
+    <picture>
+      <source media="(max-width: 540px)" srcset="./img/main-article/map-mob.jpg" alt="">
+      <img src="./img/main-article/mapUk.jpg" alt="Pixels">
+    </picture>
+  </div>
+
+
+  <div class="map-item__first">
+    <img src="./img/main-article/map-item-1.png" alt="Item">
+  </div>
+  <div class="map-item__second">
+    <img src="./img/main-article/map-item-2.png" alt="Item">
+  </div>
+  <div class="map-item__third">
+    <img src="./img/main-article/map-item-3.png" alt="Item">
+  </div>
+  <div class="map-item__fourth">
+    <img src="./img/main-article/map-item-4.png" alt="Item">
+  </div>
+  <div class="map-item__fifth">
+    <img src="./img/main-article/map-item-5.png" alt="Item">
+  </div>
+  <div class="map-item__sixth">
+    <img src="./img/main-article/map-item-6.png" alt="Item">
+  </div>
+  <div class="map-item__seventh">
+    <img src="./img/main-article/map-item-7.png" alt="Item">
+  </div>
+
+  <div class="container">
+    <div class="map__content">
+      <div class="map__content-icon">
+        <img src="./img/icons/saveUk.svg" alt="Save">
+      </div>
+
+      <div class="map__content-descr">
+        <h3>Стати партнером <br> або волонтером фонду</h3>
+        <p>
+          П’ять багі вже допомагають бойовим медикам евакуйовувати поранених та ефективно виконувати бойові задачі у
+          гарячих точках
+        </p>
+      </div>
+
+      <div class="map__content-links">
+        <a target="_blank" href="https://web.telegram.org/k/">
+          <span>
+            <img src="./img/icons/telegram-icon-white.svg" alt="Telegram">
+          </span>
+          <span>Telegram</span>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <span>
+            <img src="./img/icons/instagram-icon-white.svg" alt="Instagram">
+          </span>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container ">
+    <div class="faq__content">
+      <div class="faq__content-pixel-t">
+        <svg width="218" height="48" viewBox="0 0 218 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.898445 0.0581055H24.9323V47.1411H0.898438L0.898445 0.0581055ZM217.137 47.1411V23.9277H193.103V47.1411H217.137ZM121.401 47.1411V24.0801H97.367L97.3677 0.0581055H73.3339L73.3339 47.1411H121.401ZM73.3223 47.1411V24.0928H49.2885V47.1411H73.3223ZM48.9769 24.0928H24.9431V0.0581055H48.9769L48.9769 24.0928ZM145.379 24.0928H169.413V0.0581055H145.379V24.0928Z"
+            fill="#EFF1F2" />
+        </svg>
+      </div>
+      <div class="faq__content-title">
+        <h3>Запитання та відповіді</h3>
+      </div>
+
+      <div class="faq__content-accordion">
+        <div class="item-at">
+          <div class="title-at">
+            <h3>Яка ціль проєктів БФ "Вдячні"?​</h3>
+          </div>
+          <div class="tab-at">
+            <p>
+              Вся інформація про актуальні проєкти, збори Фонду оновлюється на сайті в розділі <a target="_blank"
+                href="https://www.grateful.com.ua/nashi-proekty/">“Проєкти”,</a> а також постійно публікується в
+              соцмережах Фонду.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-at">
+          <div class="title-at">
+            <h3>Де я можу перевірити інформацію про актуальні проєкти БФ "Вдячні"?</h3>
+          </div>
+          <div class="tab-at">
+            <p>
+              Вся інформація про актуальні проєкти, збори Фонду оновлюється на сайті в розділі <a target="_blank"
+                href="https://www.grateful.com.ua/nashi-proekty/">“Проєкти”,</a> а також постійно публікується в
+              соцмережах Фонду.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-at">
+          <div class="title-at">
+            <h3>Як фонд звітує про свої проєкти?</h3>
+          </div>
+          <div class="tab-at">
+            <p>
+              Вся інформація про актуальні проєкти, збори Фонду оновлюється на сайті в розділі <a target="_blank"
+                href="https://www.grateful.com.ua/nashi-proekty/">“Проєкти”,</a> а також постійно публікується в
+              соцмережах Фонду.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-at">
+          <div class="title-at">
+            <h3>Чи можемо ми доставити щось із-за кордону під ваші запити та куплене вами індивідуально?</h3>
+          </div>
+          <div class="tab-at">
+            <p>
+              Вся інформація про актуальні проєкти, збори Фонду оновлюється на сайті в розділі <a target="_blank"
+                href="https://www.grateful.com.ua/nashi-proekty/">“Проєкти”,</a> а також постійно публікується в
+              соцмережах Фонду.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-at">
+          <div class="title-at">
+            <h3>Як обираємо кому допомагати?</h3>
+          </div>
+          <div class="tab-at">
+            <p>
+              Вся інформація про актуальні проєкти, збори Фонду оновлюється на сайті в розділі <a target="_blank"
+                href="https://www.grateful.com.ua/nashi-proekty/">“Проєкти”,</a> а також постійно публікується в
+              соцмережах Фонду.
+            </p>
+          </div>
+        </div>
+        <div class="faq-link">
+          <a href="#!" class="grey-link-btn project-link">
+            <span>Отримати допомогу</span>
+            <span>
+              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#000" stroke-width="2" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- popup's -->
+<div class="popup-slider__content" id="contentSliderPopUp">
+  <div class="slider__content-close" id="closeSliderPopUp">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.7988 14.2725H18.0488V15.5225H19.2988V16.7725H20.5488V18.0225H21.7988V19.2725H23.0488V20.5225H24.2988V21.7725H25.5488V23.0225H24.2988V24.2725H23.0488V25.5225H21.7988V24.2725H20.5488V23.0225H19.2988V21.7725H18.0488V20.5225H16.7988V19.2725H15.5488V18.0225H14.2988V16.7725H11.7988V18.0225H10.5488V19.2725H9.29883V20.5225H8.04883V21.7725H6.79883V23.0225H5.54883V24.2725H4.29883V25.5225H3.04883V24.2725H1.79883V23.0225H0.548828V21.7725H1.79883V20.5225H3.04883V19.2725H4.29883V18.0225H5.54883V16.7725H6.79883V15.5225H8.04883V14.2725H9.29883V11.7725H8.04883V10.5225H6.79883V9.27246H5.54883V8.02246H4.29883V6.77246H3.04883V5.52246H1.79883V4.27246H0.548828V3.02246H1.79883V1.77246H3.04883V0.522461H4.29883V1.77246H5.54883V3.02246H6.79883V4.27246H8.04883V5.52246H9.29883V6.77246H10.5488V8.02246H11.7988V9.27246H14.2988V8.02246H15.5488V6.77246H16.7988V5.52246H18.0488V4.27246H19.2988V3.02246H20.5488V1.77246H21.7988V0.522461H23.0488V1.77246H24.2988V3.02246H25.5488V4.27246H24.2988V5.52246H23.0488V6.77246H21.7988V8.02246H20.5488V9.27246H19.2988V10.5225H18.0488V11.7725H16.7988V14.2725Z"
+        fill="white" fill-opacity="0.5" />
+    </svg>
+
+  </div>
+  <div class="slider__content-container">
+    <div class="popup-slider swiper">
+      <div class="popup-slider__wrapper swiper-wrapper">
+        <div class="popup-slider__slide photoreports__content-slide swiper-slide">
+          <div class="photoreports__content-slide__img">
+            <img src="./img/main-article/popup-slide-1.jpg"
+              alt="Важливий вантаж для міської лікарні швидкої медичної допомоги">
+          </div>
+          <div class="photoreports__content-slide__descr">
+            <div class="photoreports__content-slide__descr-location">
+              <p>Важливий вантаж для міської лікарні швидкої медичної допомоги</p>
+              <div class="photoreports-map">
+                <span><img src="./img/icons/map-point-white.svg" alt="Point"></span>
+                <span>м. Кам'янське</span>
+              </div>
+            </div>
+            <div class="photoreports__content-slide__descr-date">
+              <span>16/11/2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-slider__slide photoreports__content-slide swiper-slide">
+          <div class="photoreports__content-slide__img">
+            <img src="./img/main-article/popup-slide-1.jpg"
+              alt="Важливий вантаж для міської лікарні швидкої медичної допомоги">
+          </div>
+          <div class="photoreports__content-slide__descr">
+            <div class="photoreports__content-slide__descr-location">
+              <p>Важливий вантаж для міської лікарні швидкої медичної допомоги</p>
+              <div class="photoreports-map">
+                <span><img src="./img/icons/map-point-white.svg" alt="Point"></span>
+                <span>м. Кам'янське</span>
+              </div>
+            </div>
+            <div class="photoreports__content-slide__descr-date">
+              <span>16/11/2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-slider__slide photoreports__content-slide swiper-slide">
+          <div class="photoreports__content-slide__img">
+            <img src="./img/main-article/popup-slide-1.jpg"
+              alt="Важливий вантаж для міської лікарні швидкої медичної допомоги">
+          </div>
+          <div class="photoreports__content-slide__descr">
+            <div class="photoreports__content-slide__descr-location">
+              <p>Важливий вантаж для міської лікарні швидкої медичної допомоги</p>
+              <div class="photoreports-map">
+                <span><img src="./img/icons/map-point-white.svg" alt="Point"></span>
+                <span>м. Кам'янське</span>
+              </div>
+            </div>
+            <div class="photoreports__content-slide__descr-date">
+              <span>16/11/2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="nav-wrap">
+
+      <div class="swiper-button-prev popup-navigation-prev">
+        <svg width="56" height="56" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="56.4648" y="55.8662" width="55" height="55" rx="27.5" transform="rotate(-180 56.4648 55.8662)"
+            fill="white" />
+          <rect x="56.4648" y="55.8662" width="55" height="55" rx="27.5" transform="rotate(-180 56.4648 55.8662)"
+            stroke="white" />
+          <path d="M37.4512 28.3655L20.4819 28.3667M20.4819 28.3667L28.9665 36.8501M20.4819 28.3667L28.9665 19.8821"
+            stroke="#101114" stroke-width="1.7" />
+        </svg>
+      </div>
+      <div class="swiper-button-next popup-navigation-next">
+        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.46484" y="0.866211" width="55" height="55" rx="27.5" fill="white" />
+          <rect x="1.46484" y="0.866211" width="55" height="55" rx="27.5" stroke="white" />
+          <path d="M20.4785 28.367L37.4478 28.3657M37.4478 28.3657L28.9632 19.8823M37.4478 28.3657L28.9632 36.8503"
+            stroke="#101114" stroke-width="1.7" />
+        </svg>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- popup's -->
+  </main>
+
+  <footer class="footer">
+	<div class="container">
+		<div class="footer__logo">
+			<div class="footer__logo-pic">
+				<a href="/">
+					<picture>
+						<source media="(max-width: 980px)" srcset="./img/icons/footer-logo-mob.svg" alt="">
+						<img src="./img/icons/footer-logo.svg" alt="Logo">
+					</picture>
+				</a>
+			</div>
+			<div class="footer__logo-lang">
+
+				<div class="footer-lang-dropdown">
+					<span id="currentLangFooter">ua</span>
+					<span class="lang-icon">
+						<svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.5625 0.727051H1.6875V1.28955H2.25V1.85205H2.8125V2.41455H3.375V2.97705H3.9375V3.53955H5.0625V2.97705H5.625V2.41455H6.1875V1.85205H6.75V1.28955H7.3125V0.727051H8.4375V1.28955H9V2.41455H8.4375V2.97705H7.875V3.53955H7.3125V4.10205H6.75V4.66455H6.1875V5.22705H5.625V5.78955H5.0625V6.35205H3.9375V5.78955H3.375V5.22705H2.8125V4.66455H2.25V4.10205H1.6875V3.53955H1.125V2.97705H0.5625V2.41455H0V1.28955H0.5625V0.727051Z"
+								fill="#fff" />
+						</svg>
+					</span>
+
+					<div class="language-dropdown">
+						<span id="langEnFooter">en</span>
+						<span id="langUaFooter">ua</span>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="social-icon-link mobile">
+			<a href="#!" class="blue-link-btn footer-link">
+				<span>
+					Зробити внесок
+				</span>
+				<span>
+					<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<div class="footer-mobile__nav">
+
+			<div class="footer__contact-nav">
+				<div class="footer__contact-nav__menu">
+					<p>Меню</p>
+					<ul>
+						<li>
+							<a target="_blank" href="#!">
+								Проекти
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Реквізити
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Звіти
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Про нас
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								FAQ
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__contact-nav__inform">
+					<p>Інформація</p>
+					<ul>
+						<li>
+							<a target="_blank" href="#!">Політика приватності</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Публічна оферта</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Документи фонду</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Звіти фонду</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__contact-address">
+					<p>Контакти</p>
+
+					<div class="footer__contact-address__phone">
+						<a href="tel:++380 93 600 2888">
+							<span>
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.3577 0.879883V2.30845H1.64342V0.879883H7.3577Z" fill="#101114" />
+									<path d="M1.64342 10.8799H0.214844V2.30845H1.64342V10.8799Z" fill="#101114" />
+									<path d="M3.07199 13.737H1.64342V10.8799H3.07199V13.737Z" fill="#101114" />
+									<path d="M4.50056 15.1656H3.07199V13.737H4.50056V15.1656Z" fill="#101114" />
+									<path d="M5.92913 16.5942H4.50056V15.1656H5.92913V16.5942Z" fill="#101114" />
+									<path d="M7.3577 18.0227H5.92913V16.5942H7.3577V18.0227Z" fill="#101114" />
+									<path d="M10.2148 19.4513H7.3577V18.0227H10.2148V19.4513Z" fill="#101114" />
+									<path d="M18.7863 19.4513V20.8799H10.2148V19.4513H18.7863Z" fill="#101114" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.5006 13.737V12.3085H18.7863V13.737H14.5006ZM18.7863 13.737H20.2148V19.4513H18.7863V13.737Z"
+										fill="#101114" />
+									<path d="M13.072 15.1656V13.737H14.5006V15.1656H13.072Z" fill="#101114" />
+									<path d="M10.2148 15.1656H13.072V16.5942H10.2148V15.1656Z" fill="#101114" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M7.3577 12.3085H8.78627V13.737H7.3577V12.3085ZM8.78627 13.737H10.2148V15.1656H8.78627V13.737Z"
+										fill="#101114" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M5.92913 8.02274V10.8799H4.50056V8.02274H5.92913ZM5.92913 10.8799H7.3577V12.3085H5.92913V10.8799Z"
+										fill="#101114" />
+									<path d="M7.3577 6.59417V8.02274H5.92913V6.59417H7.3577Z" fill="#101114" />
+									<path d="M7.3577 6.59417H8.78627V2.30845H7.3577V6.59417Z" fill="#101114" />
+									<path
+										d="M1.64258 2.30859H7.35686V6.59431H5.92829V8.02288H4.49972V10.88H5.92829V12.3086H7.35686V13.7372H8.78543V15.1657H10.214V16.5943H13.0711V15.1657H14.4997V13.7372H18.7854V19.4515H10.214V18.0229H7.35686V16.5943H5.92829V15.1657H4.49972V13.7372H3.07115V10.88H1.64258V2.30859Z"
+										fill="#4E5158" />
+								</svg>
+							</span>
+							<span>+380 93 600 2888</span>
+						</a>
+					</div>
+					<div class="footer__contact-address__mail">
+						<a href="mailto:info@grateful.com.ua">
+							<span>
+								<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M3.07115 4.80734V1.9502H17.3569V4.80734H18.7854V13.3788H17.3569V14.8073H3.07115V13.3788H1.64258V4.80734H3.07115Z"
+										fill="#4E5158" />
+									<path d="M1.64342 13.3796H3.07199V14.8082H1.64342V13.3796Z" fill="#101114" />
+									<path d="M17.3577 13.3796H18.7863V14.8082H17.3577V13.3796Z" fill="#101114" />
+									<path d="M14.5006 6.23675H15.9291V7.66532H14.5006V6.23675Z" fill="#101114" />
+									<path d="M13.072 7.66532H14.5006V9.09389H13.072V7.66532Z" fill="#101114" />
+									<path d="M15.9291 4.80817H17.3577V6.23675H15.9291V4.80817Z" fill="#101114" />
+									<path d="M3.07199 4.80817H4.50056V6.23675H3.07199V4.80817Z" fill="#101114" />
+									<path d="M4.50056 6.23675H5.92913V7.66532H4.50056V6.23675Z" fill="#101114" />
+									<path d="M5.92913 7.66532H7.3577V9.09389H5.92913V7.66532Z" fill="#101114" />
+									<path d="M18.7863 13.3796H20.2148V3.3796H18.7863V1.95103H17.3577V4.80817H18.7863V13.3796Z"
+										fill="#101114" />
+									<path d="M13.072 10.5225V9.09389H7.3577V10.5225H13.072Z" fill="#101114" />
+									<path d="M1.64342 3.3796H0.214844V13.3796H1.64342V4.80817H3.07199V1.95103H1.64342V3.3796Z"
+										fill="#101114" />
+									<path d="M3.07199 0.522461V1.95103H17.3577V0.522461H3.07199Z" fill="#101114" />
+									<path d="M3.07199 14.8082V16.2367H17.3577V14.8082H3.07199Z" fill="#101114" />
+								</svg>
+							</span>
+							<span>info@grateful.com.ua</span>
+						</a>
+					</div>
+					<div class="footer__contact-address__clock">
+						<span>
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.9648 14.6299V7.12988H17.7148V4.62988H16.4648V3.37988H13.9648V2.12988H6.46484V3.37988H3.96484V4.62988H2.71484V7.12988H1.46484V14.6299H2.71484V17.1299H3.96484V18.3799H6.46484V19.6299H13.9648V18.3799H16.4648V17.1299H17.7148V14.6299H18.9648Z"
+									fill="#4E5158" />
+								<path d="M12.7148 7.12985H13.9648V8.37985H12.7148V7.12985Z" fill="#101114" />
+								<path d="M12.7148 13.3799L13.9648 13.3799L13.9648 14.6299L12.7148 14.6298L12.7148 13.3799Z"
+									fill="#101114" />
+								<path d="M6.46483 13.3799L7.71484 13.3799L7.71485 14.6298L6.46484 14.6299L6.46483 13.3799Z"
+									fill="#101114" />
+								<path d="M16.4649 3.37985L17.7148 3.37988L17.7148 4.62988L16.4648 4.62988L16.4649 3.37985Z"
+									fill="#101114" />
+								<path d="M16.4648 17.1299L17.7148 17.1299L17.7148 18.3799H16.4648V17.1299Z" fill="#101114" />
+								<path d="M2.71484 17.1299H3.96484L3.96485 18.3799L2.71484 18.3799V17.1299Z" fill="#101114" />
+								<path d="M2.71484 3.37988L3.96484 3.37987L3.96484 4.62988L2.71483 4.62988L2.71484 3.37988Z"
+									fill="#101114" />
+								<path d="M6.46484 7.12988L7.71485 7.12987L7.71484 8.37988L6.46483 8.37988L6.46484 7.12988Z"
+									fill="#101114" />
+								<path d="M10.2148 8.37987H11.4648V9.62987L10.2148 9.62985L10.2148 8.37987Z" fill="#101114" />
+								<path d="M6.46484 0.879883V2.12988H13.9648V0.879883H6.46484Z" fill="#101114" />
+								<path d="M3.96484 2.12987V3.37987L6.46484 3.37985L6.46484 2.12988L3.96484 2.12987Z" fill="#101114" />
+								<path d="M13.9648 2.12988L13.9648 3.37985H16.4649V2.12985L13.9648 2.12988Z" fill="#101114" />
+								<path d="M18.9648 4.62988H17.7148L17.7148 7.12985L18.9648 7.12985L18.9648 4.62988Z" fill="#101114" />
+								<path d="M2.71483 4.62988H1.46483L1.46484 7.12985L2.71484 7.12985L2.71483 4.62988Z" fill="#101114" />
+								<path d="M1.46484 7.12985H0.214844V14.6299H1.46484V7.12985Z" fill="#101114" />
+								<path d="M5.21483 13.3799H6.46483V8.37988H5.21483V13.3799Z" fill="#101114" />
+								<path d="M7.71485 5.87987V7.12987L12.7148 7.12985L12.7148 5.87987H7.71485Z" fill="#101114" />
+								<path d="M15.2148 8.37988L13.9648 8.37985L13.9648 13.3799H15.2148V8.37988Z" fill="#101114" />
+								<path d="M8.96484 12.1299H10.2148V9.62985H8.96484V12.1299Z" fill="#101114" />
+								<path d="M12.7148 15.8798V14.6298H7.71485V15.8798H12.7148Z" fill="#101114" />
+								<path d="M18.9648 14.6299H20.2148V7.12985H18.9648V14.6299Z" fill="#101114" />
+								<path d="M17.7148 17.1299H18.9648L18.9648 14.6299L17.7148 14.6299L17.7148 17.1299Z" fill="#101114" />
+								<path d="M13.9648 18.3799L13.9648 19.6299L16.4649 19.6299L16.4648 18.3799L13.9648 18.3799Z"
+									fill="#101114" />
+								<path d="M6.46484 19.6299V20.8799H13.9648V19.6299H6.46484Z" fill="#101114" />
+								<path d="M6.46484 19.6299L6.46484 18.3799H3.96485V19.6299L6.46484 19.6299Z" fill="#101114" />
+								<path d="M2.71484 14.6299L1.46484 14.6299L1.46484 17.1299L2.71484 17.1299L2.71484 14.6299Z"
+									fill="#101114" />
+							</svg>
+						</span>
+						<span>пн-пт з 9.00 до 18.00</span>
+					</div>
+					<div class="footer__contact-address__loc">
+						<a target="_blank" href="https://maps.app.goo.gl/RBKyaYvPq5YHxMXn9">
+							<span>
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.07199 6.59417H4.50056V8.02274H3.07199V6.59417Z" fill="#101114" />
+									<path d="M4.50056 5.1656H5.92913V6.59417H4.50056V5.1656Z" fill="#101114" />
+									<path d="M0.214844 9.45131H1.64342V10.8799H0.214844V9.45131Z" fill="#101114" />
+									<path d="M18.7863 9.45131H20.2148V10.8799H18.7863V9.45131Z" fill="#101114" />
+									<path d="M17.3577 8.02274H18.7863V9.45131H17.3577V8.02274Z" fill="#101114" />
+									<path d="M15.9291 6.59417H17.3577V8.02274H15.9291V6.59417Z" fill="#101114" />
+									<path d="M14.5006 5.1656H15.9291V6.59417H14.5006V5.1656Z" fill="#101114" />
+									<path d="M13.072 3.73703H14.5006V5.1656H13.072V3.73703Z" fill="#101114" />
+									<path d="M11.6434 2.30845H13.072V3.73703H11.6434V2.30845Z" fill="#101114" />
+									<path d="M10.2148 0.879883H11.6434V2.30845H10.2148V0.879883Z" fill="#101114" />
+									<path d="M7.3577 2.30845H8.78627V3.73703H7.3577V2.30845Z" fill="#101114" />
+									<path d="M8.78627 0.879883H10.2148V2.30845H8.78627V0.879883Z" fill="#101114" />
+									<path d="M5.92913 3.73703H7.3577V5.1656H5.92913V3.73703Z" fill="#101114" />
+									<path d="M1.64342 8.02274H3.07199V9.45131H1.64342V8.02274Z" fill="#101114" />
+									<path d="M3.07199 10.8799H1.64342V19.4513H3.07199V10.8799Z" fill="#101114" />
+									<path d="M3.07199 19.4513V20.8799H7.3577V19.4513H3.07199Z" fill="#101114" />
+									<path d="M7.3577 19.4513H8.78627V15.1656H7.3577V19.4513Z" fill="#101114" />
+									<path d="M8.78627 13.737V15.1656H11.6434V13.737H8.78627Z" fill="#101114" />
+									<path d="M13.072 15.1656H11.6434V19.4513H13.072V15.1656Z" fill="#101114" />
+									<path d="M13.072 19.4513V20.8799H17.3577V19.4513H13.072Z" fill="#101114" />
+									<path d="M17.3577 19.4513H18.7863V10.8799H17.3577V19.4513Z" fill="#101114" />
+									<path
+										d="M1.64258 9.45047V10.879H3.07115V19.4505H7.35686V15.1648H8.78543V13.7362H11.6426V15.1648H13.0711V19.4505H17.3569V10.879H18.7854V9.45047H17.3569V8.0219H15.9283V6.59333H14.4997V5.16476H13.0711V3.73619H11.6426V2.30762H8.78543V3.73619H7.35686V5.16476H5.92829V6.59333H4.49972V8.0219H3.07115V9.45047H1.64258Z"
+										fill="#4E5158" />
+								</svg>
+							</span>
+							<span>79016, м. Львів, вул. Марка Вовчка, 24</span>
+						</a>
+					</div>
+
+					<div class="footer__contact-address__info">
+						<span>Код ЄДРПОУ 44806252</span>
+					</div>
+
+				</div>
+
+				<div class="footer__contact-nav__social">
+					<p>Соціальні мережі</p>
+					<div class="social-icon-wrap">
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-insta-icon.svg" alt="Instagram">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-tt-icon.svg" alt="TikTok">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-youtube-icon.svg" alt="Youtube">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-facebook-icon.svg" alt="Facebook">
+						</a>
+					</div>
+					<div class="social-icon-link descktop">
+						<a href="#!" class="blue-link-btn footer-link">
+							<span>
+								Зробити внесок
+							</span>
+							<span>
+								<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__contact footer-hide">
+			<div class="footer__contact-address">
+				<p>Контакти</p>
+
+				<div class="footer__contact-address__phone">
+					<a href="tel:++380 93 600 2888">
+						<span>
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.3577 0.879883V2.30845H1.64342V0.879883H7.3577Z" fill="#101114" />
+								<path d="M1.64342 10.8799H0.214844V2.30845H1.64342V10.8799Z" fill="#101114" />
+								<path d="M3.07199 13.737H1.64342V10.8799H3.07199V13.737Z" fill="#101114" />
+								<path d="M4.50056 15.1656H3.07199V13.737H4.50056V15.1656Z" fill="#101114" />
+								<path d="M5.92913 16.5942H4.50056V15.1656H5.92913V16.5942Z" fill="#101114" />
+								<path d="M7.3577 18.0227H5.92913V16.5942H7.3577V18.0227Z" fill="#101114" />
+								<path d="M10.2148 19.4513H7.3577V18.0227H10.2148V19.4513Z" fill="#101114" />
+								<path d="M18.7863 19.4513V20.8799H10.2148V19.4513H18.7863Z" fill="#101114" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M14.5006 13.737V12.3085H18.7863V13.737H14.5006ZM18.7863 13.737H20.2148V19.4513H18.7863V13.737Z"
+									fill="#101114" />
+								<path d="M13.072 15.1656V13.737H14.5006V15.1656H13.072Z" fill="#101114" />
+								<path d="M10.2148 15.1656H13.072V16.5942H10.2148V15.1656Z" fill="#101114" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M7.3577 12.3085H8.78627V13.737H7.3577V12.3085ZM8.78627 13.737H10.2148V15.1656H8.78627V13.737Z"
+									fill="#101114" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M5.92913 8.02274V10.8799H4.50056V8.02274H5.92913ZM5.92913 10.8799H7.3577V12.3085H5.92913V10.8799Z"
+									fill="#101114" />
+								<path d="M7.3577 6.59417V8.02274H5.92913V6.59417H7.3577Z" fill="#101114" />
+								<path d="M7.3577 6.59417H8.78627V2.30845H7.3577V6.59417Z" fill="#101114" />
+								<path
+									d="M1.64258 2.30859H7.35686V6.59431H5.92829V8.02288H4.49972V10.88H5.92829V12.3086H7.35686V13.7372H8.78543V15.1657H10.214V16.5943H13.0711V15.1657H14.4997V13.7372H18.7854V19.4515H10.214V18.0229H7.35686V16.5943H5.92829V15.1657H4.49972V13.7372H3.07115V10.88H1.64258V2.30859Z"
+									fill="#4E5158" />
+							</svg>
+						</span>
+						<span>+380 93 600 2888</span>
+					</a>
+				</div>
+				<div class="footer__contact-address__mail">
+					<a href="mailto:info@grateful.com.ua">
+						<span>
+							<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.07115 4.80734V1.9502H17.3569V4.80734H18.7854V13.3788H17.3569V14.8073H3.07115V13.3788H1.64258V4.80734H3.07115Z"
+									fill="#4E5158" />
+								<path d="M1.64342 13.3796H3.07199V14.8082H1.64342V13.3796Z" fill="#101114" />
+								<path d="M17.3577 13.3796H18.7863V14.8082H17.3577V13.3796Z" fill="#101114" />
+								<path d="M14.5006 6.23675H15.9291V7.66532H14.5006V6.23675Z" fill="#101114" />
+								<path d="M13.072 7.66532H14.5006V9.09389H13.072V7.66532Z" fill="#101114" />
+								<path d="M15.9291 4.80817H17.3577V6.23675H15.9291V4.80817Z" fill="#101114" />
+								<path d="M3.07199 4.80817H4.50056V6.23675H3.07199V4.80817Z" fill="#101114" />
+								<path d="M4.50056 6.23675H5.92913V7.66532H4.50056V6.23675Z" fill="#101114" />
+								<path d="M5.92913 7.66532H7.3577V9.09389H5.92913V7.66532Z" fill="#101114" />
+								<path d="M18.7863 13.3796H20.2148V3.3796H18.7863V1.95103H17.3577V4.80817H18.7863V13.3796Z"
+									fill="#101114" />
+								<path d="M13.072 10.5225V9.09389H7.3577V10.5225H13.072Z" fill="#101114" />
+								<path d="M1.64342 3.3796H0.214844V13.3796H1.64342V4.80817H3.07199V1.95103H1.64342V3.3796Z"
+									fill="#101114" />
+								<path d="M3.07199 0.522461V1.95103H17.3577V0.522461H3.07199Z" fill="#101114" />
+								<path d="M3.07199 14.8082V16.2367H17.3577V14.8082H3.07199Z" fill="#101114" />
+							</svg>
+						</span>
+						<span>info@grateful.com.ua</span>
+					</a>
+				</div>
+				<div class="footer__contact-address__clock">
+					<span>
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M18.9648 14.6299V7.12988H17.7148V4.62988H16.4648V3.37988H13.9648V2.12988H6.46484V3.37988H3.96484V4.62988H2.71484V7.12988H1.46484V14.6299H2.71484V17.1299H3.96484V18.3799H6.46484V19.6299H13.9648V18.3799H16.4648V17.1299H17.7148V14.6299H18.9648Z"
+								fill="#4E5158" />
+							<path d="M12.7148 7.12985H13.9648V8.37985H12.7148V7.12985Z" fill="#101114" />
+							<path d="M12.7148 13.3799L13.9648 13.3799L13.9648 14.6299L12.7148 14.6298L12.7148 13.3799Z"
+								fill="#101114" />
+							<path d="M6.46483 13.3799L7.71484 13.3799L7.71485 14.6298L6.46484 14.6299L6.46483 13.3799Z"
+								fill="#101114" />
+							<path d="M16.4649 3.37985L17.7148 3.37988L17.7148 4.62988L16.4648 4.62988L16.4649 3.37985Z"
+								fill="#101114" />
+							<path d="M16.4648 17.1299L17.7148 17.1299L17.7148 18.3799H16.4648V17.1299Z" fill="#101114" />
+							<path d="M2.71484 17.1299H3.96484L3.96485 18.3799L2.71484 18.3799V17.1299Z" fill="#101114" />
+							<path d="M2.71484 3.37988L3.96484 3.37987L3.96484 4.62988L2.71483 4.62988L2.71484 3.37988Z"
+								fill="#101114" />
+							<path d="M6.46484 7.12988L7.71485 7.12987L7.71484 8.37988L6.46483 8.37988L6.46484 7.12988Z"
+								fill="#101114" />
+							<path d="M10.2148 8.37987H11.4648V9.62987L10.2148 9.62985L10.2148 8.37987Z" fill="#101114" />
+							<path d="M6.46484 0.879883V2.12988H13.9648V0.879883H6.46484Z" fill="#101114" />
+							<path d="M3.96484 2.12987V3.37987L6.46484 3.37985L6.46484 2.12988L3.96484 2.12987Z" fill="#101114" />
+							<path d="M13.9648 2.12988L13.9648 3.37985H16.4649V2.12985L13.9648 2.12988Z" fill="#101114" />
+							<path d="M18.9648 4.62988H17.7148L17.7148 7.12985L18.9648 7.12985L18.9648 4.62988Z" fill="#101114" />
+							<path d="M2.71483 4.62988H1.46483L1.46484 7.12985L2.71484 7.12985L2.71483 4.62988Z" fill="#101114" />
+							<path d="M1.46484 7.12985H0.214844V14.6299H1.46484V7.12985Z" fill="#101114" />
+							<path d="M5.21483 13.3799H6.46483V8.37988H5.21483V13.3799Z" fill="#101114" />
+							<path d="M7.71485 5.87987V7.12987L12.7148 7.12985L12.7148 5.87987H7.71485Z" fill="#101114" />
+							<path d="M15.2148 8.37988L13.9648 8.37985L13.9648 13.3799H15.2148V8.37988Z" fill="#101114" />
+							<path d="M8.96484 12.1299H10.2148V9.62985H8.96484V12.1299Z" fill="#101114" />
+							<path d="M12.7148 15.8798V14.6298H7.71485V15.8798H12.7148Z" fill="#101114" />
+							<path d="M18.9648 14.6299H20.2148V7.12985H18.9648V14.6299Z" fill="#101114" />
+							<path d="M17.7148 17.1299H18.9648L18.9648 14.6299L17.7148 14.6299L17.7148 17.1299Z" fill="#101114" />
+							<path d="M13.9648 18.3799L13.9648 19.6299L16.4649 19.6299L16.4648 18.3799L13.9648 18.3799Z"
+								fill="#101114" />
+							<path d="M6.46484 19.6299V20.8799H13.9648V19.6299H6.46484Z" fill="#101114" />
+							<path d="M6.46484 19.6299L6.46484 18.3799H3.96485V19.6299L6.46484 19.6299Z" fill="#101114" />
+							<path d="M2.71484 14.6299L1.46484 14.6299L1.46484 17.1299L2.71484 17.1299L2.71484 14.6299Z"
+								fill="#101114" />
+						</svg>
+					</span>
+					<span>пн-пт з 9.00 до 18.00</span>
+				</div>
+				<div class="footer__contact-address__loc">
+					<a target="_blank" href="https://maps.app.goo.gl/RBKyaYvPq5YHxMXn9">
+						<span>
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.07199 6.59417H4.50056V8.02274H3.07199V6.59417Z" fill="#101114" />
+								<path d="M4.50056 5.1656H5.92913V6.59417H4.50056V5.1656Z" fill="#101114" />
+								<path d="M0.214844 9.45131H1.64342V10.8799H0.214844V9.45131Z" fill="#101114" />
+								<path d="M18.7863 9.45131H20.2148V10.8799H18.7863V9.45131Z" fill="#101114" />
+								<path d="M17.3577 8.02274H18.7863V9.45131H17.3577V8.02274Z" fill="#101114" />
+								<path d="M15.9291 6.59417H17.3577V8.02274H15.9291V6.59417Z" fill="#101114" />
+								<path d="M14.5006 5.1656H15.9291V6.59417H14.5006V5.1656Z" fill="#101114" />
+								<path d="M13.072 3.73703H14.5006V5.1656H13.072V3.73703Z" fill="#101114" />
+								<path d="M11.6434 2.30845H13.072V3.73703H11.6434V2.30845Z" fill="#101114" />
+								<path d="M10.2148 0.879883H11.6434V2.30845H10.2148V0.879883Z" fill="#101114" />
+								<path d="M7.3577 2.30845H8.78627V3.73703H7.3577V2.30845Z" fill="#101114" />
+								<path d="M8.78627 0.879883H10.2148V2.30845H8.78627V0.879883Z" fill="#101114" />
+								<path d="M5.92913 3.73703H7.3577V5.1656H5.92913V3.73703Z" fill="#101114" />
+								<path d="M1.64342 8.02274H3.07199V9.45131H1.64342V8.02274Z" fill="#101114" />
+								<path d="M3.07199 10.8799H1.64342V19.4513H3.07199V10.8799Z" fill="#101114" />
+								<path d="M3.07199 19.4513V20.8799H7.3577V19.4513H3.07199Z" fill="#101114" />
+								<path d="M7.3577 19.4513H8.78627V15.1656H7.3577V19.4513Z" fill="#101114" />
+								<path d="M8.78627 13.737V15.1656H11.6434V13.737H8.78627Z" fill="#101114" />
+								<path d="M13.072 15.1656H11.6434V19.4513H13.072V15.1656Z" fill="#101114" />
+								<path d="M13.072 19.4513V20.8799H17.3577V19.4513H13.072Z" fill="#101114" />
+								<path d="M17.3577 19.4513H18.7863V10.8799H17.3577V19.4513Z" fill="#101114" />
+								<path
+									d="M1.64258 9.45047V10.879H3.07115V19.4505H7.35686V15.1648H8.78543V13.7362H11.6426V15.1648H13.0711V19.4505H17.3569V10.879H18.7854V9.45047H17.3569V8.0219H15.9283V6.59333H14.4997V5.16476H13.0711V3.73619H11.6426V2.30762H8.78543V3.73619H7.35686V5.16476H5.92829V6.59333H4.49972V8.0219H3.07115V9.45047H1.64258Z"
+									fill="#4E5158" />
+							</svg>
+						</span>
+						<span>79016, м. Львів, вул. Марка Вовчка, 24</span>
+					</a>
+				</div>
+
+				<div class="footer__contact-address__info">
+					<span>Код ЄДРПОУ 44806252</span>
+				</div>
+
+			</div>
+
+			<div class="footer__contact-nav">
+				<div class="footer__contact-nav__menu">
+					<p>Меню</p>
+					<ul>
+						<li>
+							<a target="_blank" href="#!">
+								Проекти
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Реквізити
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Звіти
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								Про нас
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">
+								FAQ
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__contact-nav__inform">
+					<p>Інформація</p>
+					<ul>
+						<li>
+							<a target="_blank" href="#!">Політика приватності</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Публічна оферта</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Документи фонду</a>
+						</li>
+						<li>
+							<a target="_blank" href="#!">Звіти фонду</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__contact-nav__social">
+					<p>Соціальні мережі</p>
+					<div class="social-icon-wrap">
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-insta-icon.svg" alt="Instagram">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-tt-icon.svg" alt="TikTok">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-youtube-icon.svg" alt="Youtube">
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<img src="./img/icons/footer-facebook-icon.svg" alt="Facebook">
+						</a>
+					</div>
+					<div class="social-icon-link descktop">
+						<a href="#!" class="blue-link-btn footer-link">
+							<span>
+								Зробити внесок
+							</span>
+							<span>
+								<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 19.5396L18.9982 7.5396M7 7.5405H18.9982V19.5387" stroke="#fff" stroke-width="2" />
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__reserved">
+			<div class="footer__reserved-item">
+				<p>© 2023 Grateful. All Rights Reserved.</p>
+			</div>
+
+			<div class="footer__reserved-dev">
+				<p>Des & Dev by</p>
+				<a target="_blank" href="#!">
+					<img src="./img/icons/intex-icon.svg" alt="INTEX">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+
+</html>
